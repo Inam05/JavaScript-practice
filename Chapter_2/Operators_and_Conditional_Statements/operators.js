@@ -16,3 +16,11 @@ console.log("a % b =",a % b);
 console.log("a ** b =",a ** b);  //5^2  power rule
 
 
+//Unary operators
+let c =6 ;
+let d = 3;
+console.log("++c =", ++c); // pre increment
+console.log("--c =", --c); // pre decrement
+console.log("d++ =", d++); // post increment
+console.log("d-- =", d--); // post decrement
+
