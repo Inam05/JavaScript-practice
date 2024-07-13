@@ -24,3 +24,20 @@ console.log("--c =", --c); // pre decrement
 console.log("d++ =", d++); // post increment
 console.log("d-- =", d--); // post decrement
 
+//Assignment operators
+let e = 2 ;
+console.log("e = 5  ", e = 2); // assignment operator
+// **=
+console.log("e **= 2  ", e **= 2); // e = e
+// +=
+console.log("e += 2  ", e += 2); // e = e + 2
+// -=
+console.log("e -= 2  ", e -= 2); // e = e - 2
+// *=
+console.log("e *= 2  ", e *= 2); // e = e * 2
+// /=
+console.log("e /= 2  ", e /= 2); // e = e / 2
+// %=
+console.log("e %= 2  ", e %= 2); // e = e % 2
+
+
