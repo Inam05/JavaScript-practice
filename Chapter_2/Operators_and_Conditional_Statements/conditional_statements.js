@@ -69,3 +69,62 @@ else {
 let age___ = 25;
 let message = (age___ < 18) ? "You are junior." : "You are adult."; // if true then "You are junior." else "You are adult."
 console.log(message);
+
+// switch statements
+// example 1
+const expr = 'Papayas';
+switch (expr) {
+    case 'Oranges':
+        console.log('Oranges are $0.59 a pound.');
+        break;
+    case 'Mangoes':
+    case 'Papayas':
+        console.log('Mangoes and papayas are $2.79 a pound.');
+        // Expected output: "Mangoes and papayas are $2.79 a pound."
+        break;
+    default:
+        console.log(`Sorry, we are out of ${expr}.`);
+}
+
+// example 2
+const foo = 0;
+switch (foo) {
+    case -1:
+        console.log("negative 1");
+        break;
+    case 0: // Value of foo matches this criteria; execution starts from here
+        console.log(0);
+    // Forgotten break! Execution falls through
+    case 1: // no break statement in 'case 0:' so this case will run as well
+        console.log(1);
+        break; // Break encountered; will not continue into 'case 2:'
+    case 2:
+        console.log(2);
+        break;
+    default:
+        console.log("default");
+}
+
+// example 3
+switch (expr) {
+    case "Oranges":
+        console.log("Oranges are $0.59 a pound.");
+        break;
+    case "Apples":
+        console.log("Apples are $0.32 a pound.");
+        break;
+    case "Bananas":
+        console.log("Bananas are $0.48 a pound.");
+        break;
+    case "Cherries":
+        console.log("Cherries are $3.00 a pound.");
+        break;
+    case "Mangoes":
+    case "Papayas":
+        console.log("Mangoes and papayas are $2.79 a pound.");
+        break;
+    default:
+        console.log(`Sorry, we are out of ${expr}.`);
+}
+
+console.log("Is there anything else you'd like?");
