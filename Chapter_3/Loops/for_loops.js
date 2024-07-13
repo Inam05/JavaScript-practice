@@ -52,3 +52,19 @@ for (let i of str_) {
     size = size + 1;
 }
 console.log("size = ", size); // print 14
+
+
+// for-in loop
+// for (variable in object) {
+//     // code to be executed
+// }
+let student = {
+    name: "Inam Ul Hassan",
+    age: 20,
+    gender: "male",
+    city: "Karachi",
+};
+
+for (let key in student) {
+    console.log("key = ", key, "    value = ", student[key]);
+}
