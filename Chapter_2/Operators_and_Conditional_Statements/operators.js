@@ -41,3 +41,17 @@ console.log("e /= 2  ", e /= 2); // e = e / 2
 console.log("e %= 2  ", e %= 2); // e = e % 2
 
 
+// Comparision operators
+let f = 3;
+let g = 4;
+let h = "4";
+console.log("f == g  ", f == g); // false
+console.log("f != g  ", f != g); // true
+console.log("f === g  ", f === g); // false
+console.log("f !== g  ", f !== g); // true
+console.log("f > g  ", f > g); // false
+console.log("f < g  ", f < g); // true
+console.log("f >= g  ", f >= g); // false
+console.log("f <= g  ", f <= g); // true
+console.log("f == g  ", f == g); // false
+console.log("g == h  ", g == h); // true
