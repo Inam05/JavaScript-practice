@@ -45,9 +45,25 @@ console.log(color_);
 
 let number = 5;
 if (number % 2 === 0) {
-    console.log(number,"is even");
+    console.log(number, "is even");
 }
 else {
-    console.log(number,"is odd");
+    console.log(number, "is odd");
 }
+
+// else-if statements
+// example 1
+let age__ = 17;
+if (age__ < 18) {
+    console.log("You are junior.")
+}
+else if (age__ < 30) {
+    console.log("You are adult.")
+}
+else {
+    console.log("You are senior.")
+}
+
+
+
 
