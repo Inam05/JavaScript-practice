@@ -64,6 +64,8 @@ else {
     console.log("You are senior.")
 }
 
-
-
-
+// Ternary Operators   condition ? true option : false option
+// example 1
+let age___ = 25;
+let message = (age___ < 18) ? "You are junior." : "You are adult."; // if true then "You are junior." else "You are adult."
+console.log(message);
