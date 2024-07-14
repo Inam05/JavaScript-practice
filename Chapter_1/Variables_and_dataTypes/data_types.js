@@ -41,3 +41,8 @@ point to be noted
 => we didn't update the const defining variable
 => we update the object defining variable by const only their keys
 */
+
+//NAN in js
+console.log(10/0); // NaN will be print on the console
+console.log(10/0.0); // NaN will be print on the console
+console.log(typeof 10/0);
