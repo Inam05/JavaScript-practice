@@ -108,3 +108,9 @@ console.log(arr3.includes(3)); // Checks if 3 is in arr3: false
 // Syntax: array.map(callback(currentValue, index, array), thisArg)
 let doubled = arr3.map(num => num * 2); // Doubles each element in arr3
 console.log(doubled); // [16, 10, 8, 4, 2]
+
+// filter()
+// Method: creates a new array with all elements that pass the test implemented by the provided function
+// Syntax: array.filter(callback(element, index, array), thisArg)
+let filtered = arr3.filter(num => num > 4); // Filters elements greater than 4
+console.log(filtered); // [8, 5]
