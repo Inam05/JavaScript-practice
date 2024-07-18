@@ -122,6 +122,11 @@ console.log(filtered); // [8, 5]
 let sum = arr3.reduce((acc, curr) => acc + curr, 0); // Sums up all elements in arr3 starting with an initial value of 0
 console.log(sum); // 24
 
+// forEach()
+// Method: executes a provided function once for each array element
+// Syntax: array.forEach(callback(currentValue, index, array), thisArg)
+arr3.forEach(num => console.log(num)); // Logs each element in arr3
+
 // every()
 // Method: tests whether all elements in the array pass the test implemented by the provided function
 // Syntax: array.every(callback(currentValue, index, array), thisArg)
