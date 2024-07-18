@@ -78,3 +78,9 @@ console.log(arrConcat); // [1, 2, 3, 4, 5, 6, 7, 8]
 let arr3 = [5, 2, 8, 1, 4];
 arr3.sort(); // Sorts arr3 in ascending order (default behavior)
 console.log(arr3); // [1, 2, 4, 5, 8]
+
+// reverse()
+// Method: reverses the order of the elements of an array in place and returns the array
+// Syntax: array.reverse()
+arr3.reverse(); // Reverses the order of elements in arr3
+console.log(arr3); // [8, 5, 4, 2, 1]
