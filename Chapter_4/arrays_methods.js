@@ -102,3 +102,9 @@ console.log(arr3.lastIndexOf(4)); // Returns the index of the last occurrence of
 // Method: determines whether an array includes a certain value among its entries, returning true or false
 // Syntax: array.includes(searchElement, fromIndex)
 console.log(arr3.includes(3)); // Checks if 3 is in arr3: false
+
+// map()
+// Method: creates a new array with the results of calling a provided function on every element in the calling array.
+// Syntax: array.map(callback(currentValue, index, array), thisArg)
+let doubled = arr3.map(num => num * 2); // Doubles each element in arr3
+console.log(doubled); // [16, 10, 8, 4, 2]
