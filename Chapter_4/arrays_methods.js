@@ -97,3 +97,8 @@ console.log(arr3.indexOf(25)); // returns -1 index because it is not include in 
 // Syntax: array.lastIndexOf(searchElement, fromIndex)
 arr3.push(4); // Adding another 4
 console.log(arr3.lastIndexOf(4)); // Returns the index of the last occurrence of 4: 5
+
+// includes()
+// Method: determines whether an array includes a certain value among its entries, returning true or false
+// Syntax: array.includes(searchElement, fromIndex)
+console.log(arr3.includes(3)); // Checks if 3 is in arr3: false
