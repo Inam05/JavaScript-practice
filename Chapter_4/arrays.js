@@ -46,3 +46,5 @@ console.log(info[0].length); // to access the length of a string through an arra
 // Arays are mutable
 marks[0] = 'inam'; // to change the specific thing at any part of an original array 
 console.log(marks); 
+marks[10] = "2024";
+console.log(marks); // to add a new thing at the end of an array
