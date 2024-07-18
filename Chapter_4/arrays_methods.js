@@ -58,3 +58,10 @@ console.log(arr.length); // 5
 arr.splice(0,2, 1, 27, 25);
 console.log(arr); // [1, 27, 25 ]
 console.log(arr.length); // 3
+
+// slice
+// slice() - extracts a section of an array and returns a new array
+// Syntax: array.slice(start, end)
+arr = [1, 2, 3, 4, 5];
+console.log(arr.slice(0, 3)); // [1, 2, 3]
+
