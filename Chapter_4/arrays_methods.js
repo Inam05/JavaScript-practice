@@ -70,4 +70,11 @@ console.log(arr.slice(0, 3)); // [1, 2, 3]
 // Syntax: array.concat(array2, array3, ..., arrayN)
 let arr2 = [6, 7, 8];
 let arrConcat = arr.concat(arr2); // Concatenates arr and arr2
-console.log(arrConcat); // [1, 27, 25, 4, 5, 6, 7, 8]
+console.log(arrConcat); // [1, 2, 3, 4, 5, 6, 7, 8]
+
+// sort()
+// Method: sorts the elements of an array in place and returns the array
+// Syntax: array.sort(compareFunction)
+let arr3 = [5, 2, 8, 1, 4];
+arr3.sort(); // Sorts arr3 in ascending order (default behavior)
+console.log(arr3); // [1, 2, 4, 5, 8]
