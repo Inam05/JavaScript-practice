@@ -84,3 +84,10 @@ console.log(arr3); // [1, 2, 4, 5, 8]
 // Syntax: array.reverse()
 arr3.reverse(); // Reverses the order of elements in arr3
 console.log(arr3); // [8, 5, 4, 2, 1]
+
+// indexOf()
+// Method: returns the first index at which a given element can be found in the array,
+// or -1 if it is not present. It compares searchElement using strict equality (===).
+// Syntax: array.indexOf(searchElement, fromIndex)
+console.log(arr3.indexOf(4)); // Returns the index of the first occurrence of 4: 2
+console.log(arr3.indexOf(25)); // returns -1 index because it is not include in the array
