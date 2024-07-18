@@ -131,3 +131,9 @@ console.log(arr3.every(num => num > 0)); // Checks if every element is greater t
 // Method: tests whether at least one element in the array passes the test implemented by the provided function
 // Syntax: array.some(callback(currentValue, index, array), thisArg)
 console.log(arr3.some(num => num < 0)); // Checks if some elements are less than 0: false
+
+// find()
+// Method: returns the value of the first element in the provided array that satisfies the provided testing function.
+// If no values satisfy the testing function, undefined is returned.
+// Syntax: array.find(callback(element, index, array), thisArg)
+console.log(arr3.find(num => num % 2 === 0)); // Finds the first even number: 8
