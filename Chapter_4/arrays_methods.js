@@ -114,3 +114,11 @@ console.log(doubled); // [16, 10, 8, 4, 2]
 // Syntax: array.filter(callback(element, index, array), thisArg)
 let filtered = arr3.filter(num => num > 4); // Filters elements greater than 4
 console.log(filtered); // [8, 5]
+
+// reduce()
+// Method: applies a function against an accumulator and each element in the array (from left to right)
+// to reduce it to a single value.
+// Syntax: array.reduce(callback(accumulator, currentValue, currentIndex, array), initialValue)
+let sum = arr3.reduce((acc, curr) => acc + curr, 0); // Sums up all elements in arr3 starting with an initial value of 0
+console.log(sum); // 24
+
