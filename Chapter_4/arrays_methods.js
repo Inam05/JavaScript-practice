@@ -126,3 +126,8 @@ console.log(sum); // 24
 // Method: tests whether all elements in the array pass the test implemented by the provided function
 // Syntax: array.every(callback(currentValue, index, array), thisArg)
 console.log(arr3.every(num => num > 0)); // Checks if every element is greater than 0: true
+
+// some()
+// Method: tests whether at least one element in the array passes the test implemented by the provided function
+// Syntax: array.some(callback(currentValue, index, array), thisArg)
+console.log(arr3.some(num => num < 0)); // Checks if some elements are less than 0: false
