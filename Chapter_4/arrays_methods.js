@@ -91,3 +91,9 @@ console.log(arr3); // [8, 5, 4, 2, 1]
 // Syntax: array.indexOf(searchElement, fromIndex)
 console.log(arr3.indexOf(4)); // Returns the index of the first occurrence of 4: 2
 console.log(arr3.indexOf(25)); // returns -1 index because it is not include in the array
+
+// lastIndexOf()
+// Method: returns the last index at which a given element can be found in the array
+// Syntax: array.lastIndexOf(searchElement, fromIndex)
+arr3.push(4); // Adding another 4
+console.log(arr3.lastIndexOf(4)); // Returns the index of the last occurrence of 4: 5
