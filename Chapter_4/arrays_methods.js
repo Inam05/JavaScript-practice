@@ -52,3 +52,9 @@ arr.shift(); // remove the first element of an array
 console.log(arr); // [1, 2, 3, 4, 5 ]
 console.log(arr.length); // 5
 
+// splice
+// splice() - removes elements from anywhere in an array and also adds new elements
+// Syntax: array.splice(start, deleteCount, item1, item2, itemN)
+arr.splice(0,2, 1, 27, 25);
+console.log(arr); // [1, 27, 25 ]
+console.log(arr.length); // 3
