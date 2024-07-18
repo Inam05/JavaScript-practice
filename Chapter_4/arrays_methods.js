@@ -47,3 +47,8 @@ arr.unshift(0); // add an element at the beginning of an array
 console.log(arr); // [0, 1, 2, 3, 4,
 console.log(arr.length); // 6
 
+// shift
+arr.shift(); // remove the first element of an array
+console.log(arr); // [1, 2, 3, 4, 5 ]
+console.log(arr.length); // 5
+
