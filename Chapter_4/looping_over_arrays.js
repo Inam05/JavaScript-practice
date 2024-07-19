@@ -15,3 +15,9 @@ const g = 10;
 const a =[1,2,3];
 a.push(4);
 console.log(a); // we can push the elements in a constant arrays
+
+// nested arrays
+let b = [1,2,[3,4,5],6,7,[8,9]];
+console.log(b); 
+console.log(b.length);
+console.log(b[2][2]); // [5]
