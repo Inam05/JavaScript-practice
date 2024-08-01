@@ -9,3 +9,7 @@
 
 // Question 4
 /* Given the array arr = [10, 20, 30, 40], use a for-of loop to print all values in the array. */
+
+// Question 5
+/* Write a for loop to print the multiplication table of 5 up to 5 x 10. */
+
