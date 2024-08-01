@@ -15,3 +15,6 @@
 
 // Question 6
 /* Write a while loop to calculate the factorial of 6. */
+
+// Question 7 
+/* Given the array arr = [1, 2, 3, 4], use a for-in loop to calculate the sum of all indices. */
