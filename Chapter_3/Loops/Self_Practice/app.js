@@ -8,6 +8,13 @@ console.log(totalSum); // Outputs 5050
 
 // Question 2
 /* Write a while loop to print all even numbers from 0 to 20. */
+let counter = 0;
+while (counter <= 20) {
+    if (counter % 2 === 0) {
+        console.log(counter);
+    }
+    counter++;
+}
 
 // Question 3
 /* Given the array arr = ['a', 'b', 'c', 'd'], use a for-in loop to print all indices of the array. */
