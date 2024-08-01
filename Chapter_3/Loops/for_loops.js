@@ -68,3 +68,11 @@ let student = {
 for (let key in student) {
     console.log("key = ", key, "    value = ", student[key]);
 }
+
+// printing the table of a number 
+let n = prompt("Write you number for print the table: ");
+n = parseInt(n);
+for (let i = n ; i <=n*10 ; i = i+n)
+{
+    console.log(i);
+}
