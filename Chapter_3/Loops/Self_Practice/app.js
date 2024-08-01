@@ -38,6 +38,13 @@ for (let multiplier = 1; multiplier <= 10; multiplier++) {
 
 // Question 6
 /* Write a while loop to calculate the factorial of 6. */
+let factorialNum = 6;
+let factorialResult = 1;
+while (factorialNum > 0) {
+    factorialResult *= factorialNum;
+    factorialNum--;
+}
+console.log(factorialResult); // Outputs 720
 
 // Question 7 
 /* Given the array arr = [1, 2, 3, 4], use a for-in loop to calculate the sum of all indices. */
