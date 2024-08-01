@@ -18,6 +18,10 @@ while (counter <= 20) {
 
 // Question 3
 /* Given the array arr = ['a', 'b', 'c', 'd'], use a for-in loop to print all indices of the array. */
+const lettersArray = ['a', 'b', 'c', 'd'];
+for (const idx in lettersArray) {
+    console.log(idx);
+}
 
 // Question 4
 /* Given the array arr = [10, 20, 30, 40], use a for-of loop to print all values in the array. */
