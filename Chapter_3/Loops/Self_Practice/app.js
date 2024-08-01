@@ -48,3 +48,9 @@ console.log(factorialResult); // Outputs 720
 
 // Question 7 
 /* Given the array arr = [1, 2, 3, 4], use a for-in loop to calculate the sum of all indices. */
+const indexArray = [1, 2, 3, 4];
+let sumOfIndices = 0;
+for (const idx in indexArray) {
+    sumOfIndices += parseInt(idx);
+}
+console.log(sumOfIndices); // Outputs 6
