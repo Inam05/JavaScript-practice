@@ -32,6 +32,9 @@ for (const val of numbersArray) {
 
 // Question 5
 /* Write a for loop to print the multiplication table of 5 up to 5 x 10. */
+for (let multiplier = 1; multiplier <= 10; multiplier++) {
+    console.log(`5 x ${multiplier} = ${5 * multiplier}`);
+}
 
 // Question 6
 /* Write a while loop to calculate the factorial of 6. */
