@@ -1,5 +1,10 @@
 // Question 1
 /* Write a for loop to calculate the sum of numbers from 1 to 100. */
+let totalSum = 0;
+for (let num = 1; num <= 100; num++) {
+    totalSum += num;
+}
+console.log(totalSum); // Outputs 5050
 
 // Question 2
 /* Write a while loop to print all even numbers from 0 to 20. */
