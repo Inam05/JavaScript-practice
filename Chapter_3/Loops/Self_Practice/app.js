@@ -102,3 +102,12 @@ console.log(sumOfOdds); // Outputs 625
 
 // Question 13
 /* Given the string str = 'JavaScript is awesome', use a for-of loop to count the number of vowels in the string. */
+const text = 'JavaScript is awesome';
+let vowelCount = 0;
+const vowels = 'aeiouAEIOU';
+for (const char of text) {
+    if (vowels.includes(char)) {
+        vowelCount++;
+    }
+}
+console.log(vowelCount); // Outputs 7
