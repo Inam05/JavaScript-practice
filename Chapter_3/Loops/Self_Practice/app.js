@@ -80,3 +80,6 @@ while (countdownTimer > 0) {
     console.log(countdownTimer);
     countdownTimer--;
 }
+
+// Question 11
+/* Given the array arr = ['apple', 'banana', 'cherry', 'date'], write a for loop to print all elements of the array in reverse order. */
