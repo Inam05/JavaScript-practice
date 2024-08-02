@@ -66,6 +66,12 @@ console.log(sumOfValues); // Outputs 10
 
 // Question 9
 /* Write a for loop to reverse the string str = 'hello'. */
+const originalString = 'hello';
+let reversedString = '';
+for (let index = originalString.length - 1; index >= 0; index--) {
+    reversedString += originalString[index];
+}
+console.log(reversedString); // Outputs 'olleh'
 
 // Question 10
 // Write a while loop to count down from 10 to 1 and print each number.
