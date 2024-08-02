@@ -75,4 +75,8 @@ console.log(reversedString); // Outputs 'olleh'
 
 // Question 10
 // Write a while loop to count down from 10 to 1 and print each number.
-
+let countdownTimer = 10;
+while (countdownTimer > 0) {
+    console.log(countdownTimer);
+    countdownTimer--;
+}
