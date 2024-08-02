@@ -48,3 +48,9 @@ marks[0] = 'inam'; // to change the specific thing at any part of an original ar
 console.log(marks); 
 marks[10] = "2024";
 console.log(marks); // to add a new thing at the end of an array
+
+// Array refrences
+let array = ['a','b','c'];
+let aarCopy;
+array == aarCopy;  // return true because we change at the same array functionality
+array === aarCopy; // this also return true
