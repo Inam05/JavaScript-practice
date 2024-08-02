@@ -61,3 +61,10 @@ console.log(aarCopy); // ['a','b','c','d']  same as it in the array
 aarCopy.pop();
 console.log(array); // ['a','b','c']  same as it in the array copy
 console.log(aarCopy);
+
+// constant arrays
+const a = [1,2,3,4,5];
+a.push(6);
+console.log(a); // 6 will be add in the constant array
+a.pop();
+console.log(a); // 6 will be remove in the constant array
