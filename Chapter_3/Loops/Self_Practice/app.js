@@ -60,3 +60,7 @@ console.log(sumOfIndices); // Outputs 6
 
 // Question 9
 /* Write a for loop to reverse the string str = 'hello'. */
+
+// Question 10
+// Write a while loop to count down from 10 to 1 and print each number.
+
