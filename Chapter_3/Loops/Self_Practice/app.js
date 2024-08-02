@@ -57,3 +57,6 @@ console.log(sumOfIndices); // Outputs 6
 
 // Question 8 
 /* Given the array arr = [1, 2, 3, 4], use a for-of loop to calculate the sum of all values. */
+
+// Question 9
+/* Write a for loop to reverse the string str = 'hello'. */
