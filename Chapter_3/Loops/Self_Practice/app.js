@@ -90,3 +90,12 @@ for (let i = fruits.length - 1; i >= 0; i--) {
 
 // Question 12 
 /* Write a while loop to calculate the sum of all odd numbers between 1 and 50. */
+let number = 1;
+let sumOfOdds = 0;
+while (number <= 50) {
+    if (number % 2 !== 0) {
+        sumOfOdds += number;
+    }
+    number++;
+}
+console.log(sumOfOdds); // Outputs 625
