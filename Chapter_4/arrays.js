@@ -54,3 +54,10 @@ let array = ['a','b','c'];
 let aarCopy;
 array == aarCopy;  // return true because we change at the same array functionality
 array === aarCopy; // this also return true
+// push and pop concepts in arrays through array references
+array.push('d');
+console.log(array);
+console.log(aarCopy); // ['a','b','c','d']  same as it in the array
+aarCopy.pop();
+console.log(array); // ['a','b','c']  same as it in the array copy
+console.log(aarCopy);
