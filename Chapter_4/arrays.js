@@ -68,3 +68,10 @@ a.push(6);
 console.log(a); // 6 will be add in the constant array
 a.pop();
 console.log(a); // 6 will be remove in the constant array
+// we cannot convert constant arrays into new array arrays completely or assign some other arrays into the constants arrays
+
+// nested arrays
+let numb = [[1,2],[3,4],[5,6]];
+console.log(numb);
+console.log(numb.length); // 3 
+
