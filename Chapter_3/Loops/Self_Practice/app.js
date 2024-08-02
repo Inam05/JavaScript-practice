@@ -54,3 +54,6 @@ for (const idx in indexArray) {
     sumOfIndices += parseInt(idx);
 }
 console.log(sumOfIndices); // Outputs 6
+
+// Question 8 
+/* Given the array arr = [1, 2, 3, 4], use a for-of loop to calculate the sum of all values. */
