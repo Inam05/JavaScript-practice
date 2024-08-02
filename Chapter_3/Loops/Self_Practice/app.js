@@ -57,6 +57,12 @@ console.log(sumOfIndices); // Outputs 6
 
 // Question 8 
 /* Given the array arr = [1, 2, 3, 4], use a for-of loop to calculate the sum of all values. */
+const valuesArray = [1, 2, 3, 4];
+let sumOfValues = 0;
+for (const value of valuesArray) {
+    sumOfValues += value;
+}
+console.log(sumOfValues); // Outputs 10
 
 // Question 9
 /* Write a for loop to reverse the string str = 'hello'. */
