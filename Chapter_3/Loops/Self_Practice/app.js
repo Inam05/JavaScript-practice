@@ -88,3 +88,5 @@ for (let i = fruits.length - 1; i >= 0; i--) {
     console.log(fruits[i]);
 }
 
+// Question 12 
+/* Write a while loop to calculate the sum of all odd numbers between 1 and 50. */
