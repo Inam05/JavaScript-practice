@@ -99,3 +99,6 @@ while (number <= 50) {
     number++;
 }
 console.log(sumOfOdds); // Outputs 625
+
+// Question 13
+/* Given the string str = 'JavaScript is awesome', use a for-of loop to count the number of vowels in the string. */
