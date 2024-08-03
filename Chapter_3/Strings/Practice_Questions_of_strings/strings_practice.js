@@ -61,3 +61,6 @@ for (let i = 0; i < inputText.length; i++) {
     }
 }
 console.log("Character frequencies:", charFrequency);
+
+// Question 5
+/* Implement a program that searches for a substring within a given string and returns the index of its first occurrence. Use a loop to iterate through the main string and compare substrings. */
