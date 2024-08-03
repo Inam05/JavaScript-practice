@@ -33,3 +33,17 @@ console.log("Reversed string:", reversed);
 
 // Question 3
 /* Create a program that checks if a given string is a palindrome (reads the same forwards and backwards). Use loops to compare characters from both ends of the string. */
+let originalString = prompt("Enter a string:");
+let palindromeCheck = true;
+let lengthOfString = originalString.length;
+for (let i = 0; i < lengthOfString / 2; i++) {
+    if (originalString[i] !== originalString[lengthOfString - 1 - i]) {
+        palindromeCheck = false;
+        break;
+    }
+}
+if (palindromeCheck) {
+    console.log("The string is a palindrome.");
+} else {
+    console.log("The string is not a palindrome.");
+}
