@@ -74,3 +74,7 @@ for (let i = 0; i <= mainString.length - searchSubstring.length; i++) {
     }
 }
 console.log("Index of first occurrence:", foundIndex);
+
+
+// Question 6
+/* Write a program that compresses a string such that 'aaabbcc' becomes 'a3b2c2'. Use loops to count consecutive characters and append the counts to the result string. */
