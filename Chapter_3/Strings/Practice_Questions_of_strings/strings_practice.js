@@ -23,3 +23,4 @@ let username = '@' + cleanName + nameLength;
 alert("Your generated username is: " + username);
 
 //Question 2
+/* Write a program that takes a string input from the user and reverses it using a loop. Ensure to handle cases where the string is empty. */
