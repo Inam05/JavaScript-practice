@@ -47,3 +47,6 @@ if (palindromeCheck) {
 } else {
     console.log("The string is not a palindrome.");
 }
+
+// Question 4
+/* Write a program that counts the frequency of each character in a given string. Use a loop and an object to store and display the results. */
