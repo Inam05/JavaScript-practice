@@ -124,3 +124,16 @@ if (areAnagrams) {
 
 // Question 8 
 /* Write a program that finds the longest common prefix among an array of strings. Use loops to compare characters at each position across all strings. */
+let stringArray = prompt("Enter an array of strings (comma-separated):").split(",");
+if (stringArray.length === 0) {
+    console.log("No common prefix.");
+} else {
+    let commonPrefix = stringArray[0];
+    for (let i = 1; i < stringArray.length; i++) {
+        while (stringArray[i].indexOf(commonPrefix) !== 0) {
+            commonPrefix = commonPrefix.substring(0, commonPrefix.length - 1);
+            if (commonPrefix === "") break;
+        }
+    }
+    console.log("Longest common prefix:", commonPrefix);
+}
