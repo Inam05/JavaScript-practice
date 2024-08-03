@@ -90,3 +90,34 @@ for (let i = 0; i < originalText.length; i++) {
     }
 }
 console.log("Compressed string:", compressedText);
+
+// Question 7 
+/* Create a program that checks if two strings are anagrams of each other (contain the same characters in any order). Use loops and sorting or frequency counting to determine if they match. */
+let firstString = prompt("Enter the first string:");
+let secondString = prompt("Enter the second string:");
+let areAnagrams = true;
+
+if (firstString.length !== secondString.length) {
+    areAnagrams = false;
+} else {
+    let charCount1 = {};
+    let charCount2 = {};
+
+    for (let i = 0; i < firstString.length; i++) {
+        charCount1[firstString[i]] = (charCount1[firstString[i]] || 0) + 1;
+        charCount2[secondString[i]] = (charCount2[secondString[i]] || 0) + 1;
+    }
+
+    for (let char in charCount1) {
+        if (charCount1[char] !== charCount2[char]) {
+            areAnagrams = false;
+            break;
+        }
+    }
+}
+
+if (areAnagrams) {
+    console.log("The strings are anagrams.");
+} else {
+    console.log("The strings are not anagrams.");
+}
