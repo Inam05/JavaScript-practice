@@ -24,3 +24,9 @@ alert("Your generated username is: " + username);
 
 //Question 2
 /* Write a program that takes a string input from the user and reverses it using a loop. Ensure to handle cases where the string is empty. */
+let str = prompt("Enter a string:");
+let reversed = "";
+for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+}
+console.log("Reversed string:", reversed);
