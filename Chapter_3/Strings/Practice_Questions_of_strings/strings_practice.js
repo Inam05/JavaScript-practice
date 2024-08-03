@@ -50,3 +50,14 @@ if (palindromeCheck) {
 
 // Question 4
 /* Write a program that counts the frequency of each character in a given string. Use a loop and an object to store and display the results. */
+let inputText = prompt("Enter a string:");
+let charFrequency = {};
+for (let i = 0; i < inputText.length; i++) {
+    let character = inputText[i];
+    if (charFrequency[character]) {
+        charFrequency[character]++;
+    } else {
+        charFrequency[character] = 1;
+    }
+}
+console.log("Character frequencies:", charFrequency);
