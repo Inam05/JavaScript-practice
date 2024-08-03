@@ -30,3 +30,6 @@ for (let i = str.length - 1; i >= 0; i--) {
     reversed += str[i];
 }
 console.log("Reversed string:", reversed);
+
+// Question 3
+/* Create a program that checks if a given string is a palindrome (reads the same forwards and backwards). Use loops to compare characters from both ends of the string. */
