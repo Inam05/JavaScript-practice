@@ -121,3 +121,6 @@ if (areAnagrams) {
 } else {
     console.log("The strings are not anagrams.");
 }
+
+// Question 8 
+/* Write a program that finds the longest common prefix among an array of strings. Use loops to compare characters at each position across all strings. */
