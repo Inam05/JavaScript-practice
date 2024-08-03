@@ -78,3 +78,15 @@ console.log("Index of first occurrence:", foundIndex);
 
 // Question 6
 /* Write a program that compresses a string such that 'aaabbcc' becomes 'a3b2c2'. Use loops to count consecutive characters and append the counts to the result string. */
+let originalText = prompt("Enter a string:");
+let compressedText = "";
+let charCount = 1;
+for (let i = 0; i < originalText.length; i++) {
+    if (originalText[i] === originalText[i + 1]) {
+        charCount++;
+    } else {
+        compressedText += originalText[i] + charCount;
+        charCount = 1;
+    }
+}
+console.log("Compressed string:", compressedText);
