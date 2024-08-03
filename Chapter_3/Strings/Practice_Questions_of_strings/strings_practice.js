@@ -64,3 +64,13 @@ console.log("Character frequencies:", charFrequency);
 
 // Question 5
 /* Implement a program that searches for a substring within a given string and returns the index of its first occurrence. Use a loop to iterate through the main string and compare substrings. */
+let mainString = prompt("Enter a string:");
+let searchSubstring = prompt("Enter a substring:");
+let foundIndex = -1;
+for (let i = 0; i <= mainString.length - searchSubstring.length; i++) {
+    if (mainString.slice(i, i + searchSubstring.length) === searchSubstring) {
+        foundIndex = i;
+        break;
+    }
+}
+console.log("Index of first occurrence:", foundIndex);
