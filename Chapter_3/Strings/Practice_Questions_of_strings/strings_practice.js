@@ -193,3 +193,14 @@ console.log("Case-converted string:", convertedCaseString);
 
 // Question 12
 /* Write a program that counts the number of vowels (a, e, i, o, u) in a given string. Use a loop to iterate through the string and check for vowels. */
+let inputVowelString = prompt("Enter a string:");
+let vowelCount = 0;
+let vowels = "aeiouAEIOU";
+
+for (let i = 0; i < inputVowelString.length; i++) {
+    if (vowels.indexOf(inputVowelString[i]) !== -1) {
+        vowelCount++;
+    }
+}
+
+console.log("Number of vowels:", vowelCount);
