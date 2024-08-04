@@ -160,3 +160,17 @@ if (isRotation) {
 
 // Question 10 
 /* Write a program that counts the number of words in a given string. Use loops to iterate through the string and check for spaces or punctuation to separate words. */
+let textString = prompt("Enter a string:");
+let wordCount = 0;
+let insideWord = false;
+
+for (let i = 0; i < textString.length; i++) {
+    if (textString[i] !== ' ' && !insideWord) {
+        insideWord = true;
+        wordCount++;
+    } else if (textString[i] === ' ') {
+        insideWord = false;
+    }
+}
+
+console.log("Number of words:", wordCount);
