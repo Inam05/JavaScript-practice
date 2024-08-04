@@ -239,3 +239,7 @@ for (let char in charOccurrences) {
 }
 
 console.log("Duplicate characters:", duplicates.trim());
+
+
+// Question 15
+/* Write a program that finds the first non-repeating character in a string. Use loops and an object to track character counts and determine the first unique character. */
