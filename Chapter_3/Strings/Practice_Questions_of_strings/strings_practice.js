@@ -208,3 +208,14 @@ console.log("Number of vowels:", vowelCount);
 
 // Question 13
 /* Write a program that removes all instances of a specified character from a given string. Use a loop to build a new string without the specified character. */
+let originalCharString = prompt("Enter a string:");
+let charToRemove = prompt("Enter the character to remove:");
+let resultString = "";
+
+for (let i = 0; i < originalCharString.length; i++) {
+    if (originalCharString[i] !== charToRemove) {
+        resultString += originalCharString[i];
+    }
+}
+
+console.log("String after removal:", resultString);
