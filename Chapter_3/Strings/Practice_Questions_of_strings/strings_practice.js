@@ -219,3 +219,7 @@ for (let i = 0; i < originalCharString.length; i++) {
 }
 
 console.log("String after removal:", resultString);
+
+
+// Question 14 
+/* Write a program that finds and prints all duplicate characters in a given string. Use loops and an object to track character occurrences. */
