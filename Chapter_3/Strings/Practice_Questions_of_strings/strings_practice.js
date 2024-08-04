@@ -156,3 +156,7 @@ if (isRotation) {
 } else {
     console.log("The strings are not rotations of each other.");
 }
+
+
+// Question 10 
+/* Write a program that counts the number of words in a given string. Use loops to iterate through the string and check for spaces or punctuation to separate words. */
