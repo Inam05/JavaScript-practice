@@ -137,3 +137,6 @@ if (stringArray.length === 0) {
     }
     console.log("Longest common prefix:", commonPrefix);
 }
+
+// Question 9 
+/* Implement a program that checks if one string is a rotation of another (e.g., "abcd" and "dabc"). Use loops to create rotated versions of the string and compare them. */
