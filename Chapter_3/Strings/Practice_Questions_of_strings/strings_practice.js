@@ -174,3 +174,6 @@ for (let i = 0; i < textString.length; i++) {
 }
 
 console.log("Number of words:", wordCount);
+
+// Question 11
+/* Create a program that converts all lowercase letters in a string to uppercase and vice versa. Use loops and conditional statements to change the case of each character. */
