@@ -140,3 +140,19 @@ if (stringArray.length === 0) {
 
 // Question 9 
 /* Implement a program that checks if one string is a rotation of another (e.g., "abcd" and "dabc"). Use loops to create rotated versions of the string and compare them. */
+let strOne = prompt("Enter the first string:");
+let strTwo = prompt("Enter the second string:");
+let isRotation = false;
+
+if (strOne.length === strTwo.length && strOne.length > 0) {
+    let concatenatedString = strOne + strOne;
+    if (concatenatedString.indexOf(strTwo) !== -1) {
+        isRotation = true;
+    }
+}
+
+if (isRotation) {
+    console.log("The strings are rotations of each other.");
+} else {
+    console.log("The strings are not rotations of each other.");
+}
