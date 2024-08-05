@@ -105,3 +105,18 @@ console.log(longestString);
 
 // Question 7 
 /* Count the occurrences of each character in a string. */
+const word = "character";
+
+const charCount = {};
+const wordArray = word.split("");
+
+for (let i = 0; i < wordArray.length; i++) {
+    const character = wordArray[i];
+    if (charCount[character]) {
+        charCount[character]++;
+    } else {
+        charCount[character] = 1;
+    }
+}
+
+console.log(charCount);
