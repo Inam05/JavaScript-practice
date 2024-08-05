@@ -15,3 +15,6 @@ function calculateAverages(studentList) {
 }
 
 console.log(calculateAverages(studentList));
+
+// Question 2
+/* Write a function that takes a string of words and returns the longest word. */
