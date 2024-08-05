@@ -90,3 +90,14 @@ console.log(flattenArray(nestedNums));
 
 // Question 6 
 /* Given an array of strings, find the string with the most characters. */
+const fruits = ["apple", "banana", "cherry", "date"];
+
+let longestString = fruits[0];
+
+for (let i = 1; i < fruits.length; i++) {
+    if (fruits[i].length > longestString.length) {
+        longestString = fruits[i];
+    }
+}
+
+console.log(longestString);
