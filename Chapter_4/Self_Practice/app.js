@@ -86,3 +86,7 @@ function flattenArray(nestedNums) {
 }
 
 console.log(flattenArray(nestedNums));
+
+
+// Question 6 
+/* Given an array of strings, find the string with the most characters. */
