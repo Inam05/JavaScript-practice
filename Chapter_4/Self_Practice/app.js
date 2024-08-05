@@ -34,3 +34,6 @@ function findLongestWord(phrase) {
 }
 
 console.log(findLongestWord(phrase));
+
+// Question 3
+/* Given an array of numbers, write a function to create a new array that contains only the even numbers. */
