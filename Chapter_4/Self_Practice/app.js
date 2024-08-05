@@ -71,3 +71,7 @@ function countVowels(message) {
 }
 
 console.log(countVowels(message));
+
+
+// Question 5
+/* ou have a nested array of numbers. Write a function to flatten the array. */
