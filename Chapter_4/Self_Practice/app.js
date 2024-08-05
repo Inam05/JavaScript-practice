@@ -101,3 +101,7 @@ for (let i = 1; i < fruits.length; i++) {
 }
 
 console.log(longestString);
+
+
+// Question 7 
+/* Count the occurrences of each character in a string. */
