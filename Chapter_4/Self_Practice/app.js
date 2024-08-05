@@ -75,3 +75,14 @@ console.log(countVowels(message));
 
 // Question 5
 /* ou have a nested array of numbers. Write a function to flatten the array. */
+const nestedNums = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+function flattenArray(nestedNums) {
+    const flattenedArray = [];
+    for (let i = 0; i < nestedNums.length; i++) {
+        flattenedArray.push(...nestedNums[i]);
+    }
+    return flattenedArray;
+}
+
+console.log(flattenArray(nestedNums));
