@@ -54,3 +54,20 @@ console.log(filterEvenNumbers(numArray));
 
 // Question 4
 /* Write a function that counts the number of vowels in a given string. */
+const message = "Hello, World!";
+
+function countVowels(message) {
+    const vowelList = "aeiouAEIOU";
+    const charArray = message.split("");
+    let vowelCount = 0;
+
+    for (let i = 0; i < charArray.length; i++) {
+        if (vowelList.includes(charArray[i])) {
+            vowelCount++;
+        }
+    }
+
+    return vowelCount;
+}
+
+console.log(countVowels(message));
