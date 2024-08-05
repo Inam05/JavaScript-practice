@@ -50,3 +50,7 @@ function filterEvenNumbers(numArray) {
 }
 
 console.log(filterEvenNumbers(numArray));
+
+
+// Question 4
+/* Write a function that counts the number of vowels in a given string. */
