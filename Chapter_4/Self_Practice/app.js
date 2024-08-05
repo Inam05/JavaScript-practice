@@ -18,3 +18,19 @@ console.log(calculateAverages(studentList));
 
 // Question 2
 /* Write a function that takes a string of words and returns the longest word. */
+const phrase = "The quick brown fox jumps over the lazy dog";
+
+function findLongestWord(phrase) {
+    const wordArray = phrase.split(" ");
+    let longestWord = wordArray[0];
+
+    for (let i = 1; i < wordArray.length; i++) {
+        if (wordArray[i].length > longestWord.length) {
+            longestWord = wordArray[i];
+        }
+    }
+
+    return longestWord;
+}
+
+console.log(findLongestWord(phrase));
