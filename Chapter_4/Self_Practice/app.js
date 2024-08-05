@@ -37,3 +37,16 @@ console.log(findLongestWord(phrase));
 
 // Question 3
 /* Given an array of numbers, write a function to create a new array that contains only the even numbers. */
+const numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function filterEvenNumbers(numArray) {
+    const evenArray = [];
+    for (let i = 0; i < numArray.length; i++) {
+        if (numArray[i] % 2 === 0) {
+            evenArray.push(numArray[i]);
+        }
+    }
+    return evenArray;
+}
+
+console.log(filterEvenNumbers(numArray));
