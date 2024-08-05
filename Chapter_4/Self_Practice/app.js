@@ -124,3 +124,14 @@ console.log(charCount);
 
 // Question 8 
 /* Sum all the numbers in a nested array. */
+const nestedNumbers = [[1, 2], [3, 4], [5, 6]];
+
+let totalSum = 0;
+
+for (let i = 0; i < nestedNumbers.length; i++) {
+    for (let j = 0; j < nestedNumbers[i].length; j++) {
+        totalSum += nestedNumbers[i][j];
+    }
+}
+
+console.log(totalSum);
