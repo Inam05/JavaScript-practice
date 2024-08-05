@@ -120,3 +120,7 @@ for (let i = 0; i < wordArray.length; i++) {
 }
 
 console.log(charCount);
+
+
+// Question 8 
+/* Sum all the numbers in a nested array. */
