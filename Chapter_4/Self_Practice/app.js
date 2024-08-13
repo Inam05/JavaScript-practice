@@ -154,3 +154,18 @@ for (let i = 0; i < words.length; i++) {
 
 console.log(result.join(" "));
 // Output: "olleh dlrow"
+
+
+// Question 10
+/*Transform an array of strings into uppercase with their length appended. */
+let stringArray = ["hello", "world", "javascript"];
+let transformedArray = [];
+
+for (let pos = 0; pos < stringArray.length; pos++) {
+    let originalStr = stringArray[pos].toUpperCase();
+    let strLength = originalStr.length;
+    transformedArray.push(originalStr + strLength);
+}
+
+console.log(transformedArray);
+// Output: ["HELLO5", "WORLD5", "JAVASCRIPT10"]
