@@ -169,3 +169,23 @@ for (let pos = 0; pos < stringArray.length; pos++) {
 
 console.log(transformedArray);
 // Output: ["HELLO5", "WORLD5", "JAVASCRIPT10"]
+
+
+// Question 11
+/*Replace each vowel in a string with the next vowel in the sequence. */
+let text = "hello";
+let vowelSequence = "aeiou";
+let updatedText = "";
+
+for (let charPos = 0; charPos < text.length; charPos++) {
+    let currentChar = text[charPos];
+    let vowelIndex = vowelSequence.indexOf(currentChar);
+    if (vowelIndex !== -1) {
+        updatedText += vowelSequence[(vowelIndex + 1) % vowelSequence.length];
+    } else {
+        updatedText += currentChar;
+    }
+}
+
+console.log(updatedText);
+// Output: "hillu"
