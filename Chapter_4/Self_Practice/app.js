@@ -193,10 +193,10 @@ console.log(updatedText);
 
 // Question 12
 /*Find the name of the student with the highest score. */
-let studentsList = [ 
-    { name: 'Alice', score: 85 }, 
-    { name: 'Bob', score: 92 }, 
-    { name: 'Charlie', score: 88 } 
+let studentsList = [
+    { name: 'Alice', score: 85 },
+    { name: 'Bob', score: 92 },
+    { name: 'Charlie', score: 88 }
 ];
 let maxScore = -1;
 let topStudentName = "";
@@ -211,3 +211,26 @@ for (let index = 0; index < studentsList.length; index++) {
 
 console.log(topStudentName);
 // Output: "Bob"
+
+// Question 13
+/*Compress a string by counting consecutive repeating characters. */
+let originalString = "aabcccccaaa";
+let compressedStr = "";
+let charsCount = 1;
+
+for (let i = 1; i < originalString.length; i++) {
+    if (originalString[i] === originalString[i - 1]) {
+        charsCount++;
+    } else {
+        compressedStr += originalString[i - 1] + charsCount;
+        charsCount = 1;
+    }
+}
+compressedStr += originalString[originalString.length - 1] + charsCount; // Add the last character
+
+if (compressedStr.length >= originalString.length) {
+    compressedStr = originalString;
+}
+
+console.log(compressedStr);
+// Output: "a2b1c5a3"
