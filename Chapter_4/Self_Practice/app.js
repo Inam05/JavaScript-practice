@@ -189,3 +189,25 @@ for (let charPos = 0; charPos < text.length; charPos++) {
 
 console.log(updatedText);
 // Output: "hillu"
+
+
+// Question 12
+/*Find the name of the student with the highest score. */
+let studentsList = [ 
+    { name: 'Alice', score: 85 }, 
+    { name: 'Bob', score: 92 }, 
+    { name: 'Charlie', score: 88 } 
+];
+let maxScore = -1;
+let topStudentName = "";
+
+for (let index = 0; index < studentsList.length; index++) {
+    let student = studenstList[index];
+    if (student.score > maxScore) {
+        maxScore = student.score;
+        topStudentName = student.name;
+    }
+}
+
+console.log(topStudentName);
+// Output: "Bob"
