@@ -135,3 +135,22 @@ for (let i = 0; i < nestedNumbers.length; i++) {
 }
 
 console.log(totalSum);
+
+
+// Question 9
+/* Reverse the order of characters in each word of a string while keeping the words in their original order. */
+let str = "hello world";
+let words = str.split(" ");
+let result = [];
+
+for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+    let reversedWord = "";
+    for (let j = word.length - 1; j >= 0; j--) {
+        reversedWord += word[j];
+    }
+    result.push(reversedWord);
+}
+
+console.log(result.join(" "));
+// Output: "olleh dlrow"
