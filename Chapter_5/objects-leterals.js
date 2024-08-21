@@ -103,5 +103,24 @@ num = num + 1;
 console.log(num);
 
 // second method
-num2 = Math.floor(Math.random() * 10) + 1;
+let num2 = Math.floor(Math.random() * 10) + 1;
 console.log(num2);
+
+
+
+// Practice Questions
+
+// Question 1
+/* Generate a random number between 1 and 100. */
+let num3 = Math.floor(Math.random() * 100) + 1;
+console.log(num3);
+
+// Question 2
+/* Generate a random number between 1 and 20. */
+let num4 = Math.floor(Math.random() * 20) + 1;
+console.log(num4);
+
+// Question 3
+/* Generate a random number between 20 and 50. */
+let num5 = Math.floor(Math.random() * 30) + 20;
+console.log(num5);
