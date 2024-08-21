@@ -32,12 +32,12 @@ console.log(post);
 
 // converstion of different types of things into strings for objects in js
 const obj = {
-    1 : "a",
-    2 : "b",
-    3 : "c",
-    null : "d",
-    undefined : "e",
-    true : "f"
+    1: "a",
+    2: "b",
+    3: "c",
+    null: "d",
+    undefined: "e",
+    true: "f"
 };
 
 console.log(obj);
@@ -48,8 +48,8 @@ console.log(obj);
 const student = {
     name: 'John',
     age: 20,
-    address : "USA",
-    marks : 84
+    address: "USA",
+    marks: 84
 };
 console.log(student);
 student.age = 10;
@@ -57,3 +57,19 @@ student.marks = "87";
 console.log(student);
 delete student.age;
 console.log(student);
+
+
+// nested objects 
+
+const classInfo = {
+    inam: {
+        grade: "A+",
+        city: "Mian Channu"
+    },
+    ukasha: {
+        grade: "A",
+        city: "Lahore"
+    }
+};
+
+console.log(classInfo);
