@@ -30,3 +30,14 @@ const post = {
 }
 console.log(post);
 
+// converstion of different types of things into strings for objects in js
+const obj = {
+    1 : "a",
+    2 : "b",
+    3 : "c",
+    null : "d",
+    undefined : "e",
+    true : "f"
+};
+
+console.log(obj);
