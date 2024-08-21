@@ -41,3 +41,19 @@ const obj = {
 };
 
 console.log(obj);
+
+
+// update the objects literals
+
+const student = {
+    name: 'John',
+    age: 20,
+    address : "USA",
+    marks : 84
+};
+console.log(student);
+student.age = 10;
+student.marks = "87";
+console.log(student);
+delete student.age;
+console.log(student);
