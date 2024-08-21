@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Guessing Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/Github/JavaScript-practice/Chapter_5/Guessing-Game/style.css">
 </head>
-
 <body>
-    <div class="container">
+    <div class="card container">
         <h1>Number Guessing Game</h1>
         <label for="max-number">Enter a max number:</label>
         <input type="number" id="max-number">
-        <button id="start-game">Start Game</button>
+        <button id="start-game" class="button">Start Game</button>
 
         <div id="game-section" style="display: none;">
             <p id="message"></p>
             <input type="number" id="guess-input">
-            <button id="guess-button">Guess</button>
-            <button id="quit-button">Quit</button>
+            <button id="guess-button" class="button">Guess</button>
+            <button id="quit-button" class="button">Quit</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="/Github/JavaScript-practice/Chapter_5/Guessing-Game/script.js"></script>
 </body>
-
 </html>
