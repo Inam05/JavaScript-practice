@@ -124,3 +124,27 @@ console.log(num4);
 /* Generate a random number between 20 and 50. */
 let num5 = Math.floor(Math.random() * 30) + 20;
 console.log(num5);
+
+
+
+// Guessing game
+/* User enters a max number and then tries to guess a random generated number between 1 to max */
+const max = prompt("Enter a max number");
+const random = Math.floor(Math.random() * max) + 1;
+let guess = prompt("Guess the number");
+while (true) {
+    if (guess == "quit") {
+        console.log("user quit");
+        break;
+    }
+    else if (guess == random) {
+        console.log("you won! Random number was", random);
+        break;
+    }
+    else if (guess < random) {
+        guess = prompt("Hint : Your guess was too small. Please try again!");
+    }
+    else if (guess > random) {
+        guess = prompt("Hint : Your guess was too big. Please try again!");
+    }
+}
