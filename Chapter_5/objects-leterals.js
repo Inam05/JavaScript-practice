@@ -78,15 +78,30 @@ console.log(classInfo);
 
 const bioData = [
     {
-        name : "Inam",
+        name: "Inam",
         grade: "A+",
         city: "Mian Channu"
     },
     {
-        name : "Ukasha",
+        name: "Ukasha",
         grade: "A",
         city: "Lahore"
     }
 ]
 
 console.log(bioData);
+
+
+// random generator number through MATH.RANDOM
+
+console.log(Math.random());
+
+let num = Math.random();
+num = num * 10;
+num = Math.floor(num);
+num = num + 1;
+console.log(num);
+
+// second method
+num2 = Math.floor(Math.random() * 10) + 1;
+console.log(num2);
