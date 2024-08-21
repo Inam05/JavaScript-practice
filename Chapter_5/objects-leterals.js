@@ -73,3 +73,20 @@ const classInfo = {
 };
 
 console.log(classInfo);
+
+// arrays of objects
+
+const bioData = [
+    {
+        name : "Inam",
+        grade: "A+",
+        city: "Mian Channu"
+    },
+    {
+        name : "Ukasha",
+        grade: "A",
+        city: "Lahore"
+    }
+]
+
+console.log(bioData);
