@@ -1,3 +1,4 @@
+// use of "this"
 const student1 = {
     name: 'John Doe',
     age: 20,
@@ -5,8 +6,14 @@ const student1 = {
     math: 50,
     science: 60,
     getAvg() {
+        console.log(this);
         let sum = (this.eng + this.math + this.science) / 3;
         console.log(`${this.name} got avg marks = ${getAvg}`);
-        console.log("inam");
     }
-}
+};
+
+student1.getAvg();
+function getAvg() {
+    console.log(this);
+};
+getAvg();
