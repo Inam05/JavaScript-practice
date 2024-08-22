@@ -26,3 +26,18 @@ try {
 } catch (error) {
     console.log(error.message);
 }
+
+
+// Miscellaneous Topics
+// Arrow Function
+const add = (a, b) => {
+    return a + b;
+}
+console.log(add(10, 20)); // Output: 30
+// Destructuring
+let person = {
+    name: 'John Doe',
+    age: 20,
+}
+let { name, age } = person;
+console.log(name, age); // Output: John Doe 20
