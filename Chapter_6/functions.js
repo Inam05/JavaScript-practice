@@ -163,11 +163,26 @@ console.log(sum3(5, 16)); // it will print 21
 
 // Higher order functions
 function mulipleGreet(func, count) {
-    for (let i = 1; i <=count; i++) {
+    for (let i = 1; i <= count; i++) {
         func();
     }
 }
 let greet_ = function () {
     console.log("Hello");
 }
-mulipleGreet(greet_,100);
+mulipleGreet(greet_, 100);
+
+function oddEvenTester(request) {
+    if (request % 2 == 0) {
+        return function (n) {
+            console.log(!(n % 2 == 0));
+        }
+    } else if (request == "even") {
+        return function (n) {
+            console.log(n % 2 == 0);
+        }
+    } else {
+        return console.log("wrong descion");
+    }
+}
+let request = "odd";
