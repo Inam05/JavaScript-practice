@@ -186,3 +186,38 @@ function oddEvenTester(request) {
     }
 }
 let request = "odd";
+
+
+// Methods
+const calculator = {
+    num: 55,
+    add: function (a, b) {
+        return a + b;
+    },
+    sub: function (a, b) {
+        return a - b;
+    },
+    mul: function (a, b) {
+        return a * b;
+    },
+    div: function (a, b) {
+        return a / b;
+    },
+    square: function (a) {
+        return a * a;
+    },
+    cube: function (a) {
+        return a * a * a;
+    },
+    power: function (a, b) {
+        return Math.pow(a, b);
+    },
+    sqrt: function (a) {
+        return Math.sqrt(a);
+    },
+    abs: function (a) {
+        return Math.abs(a);
+    }
+};
+console.log(calculator.add(9, 5));
+console.log(calculator.power(9, 5));
