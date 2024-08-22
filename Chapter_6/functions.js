@@ -141,14 +141,33 @@ outer(); // it will print 10
 // Question 1
 
 let greet = "Hello";
-function changedGreet(){
+function changedGreet() {
     // global greet variable is not available in the function
     let greet = "Salam";
     console.log(greet);
-    function innerGreet(){
+    function innerGreet() {
         // greet is not accessable here because its a block scope variable
         console.log(greet);
     }
 }
 console.log(greet);
 changedGreet();
+
+
+
+// Function Expressions
+const sum3 = function (a, b) {
+    return a + b;
+}
+console.log(sum3(5, 16)); // it will print 21
+
+// Higher order functions
+function mulipleGreet(func, count) {
+    for (let i = 1; i <=count; i++) {
+        func();
+    }
+}
+let greet_ = function () {
+    console.log("Hello");
+}
+mulipleGreet(greet_,100);
