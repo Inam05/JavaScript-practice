@@ -42,3 +42,46 @@ function rollDice() {
     console.log("You rolled a " + diceValue);
 }
 rollDice();
+
+
+// Functions with Arguments
+
+function printInfo(name, age) {
+    console.log(`${name}'s age is ${age}`);
+}
+printInfo("Inam", 19);
+printInfo("Inam");   // order wise argruments access
+
+function sum(a, b) {
+    console.log(a + b);
+}
+sum(5, 6);
+sum(4567876, 456787);
+
+// Practice Question
+
+// Question 1
+// Create a  function that gives us the average of 3 numbers
+function average(a, b, c) {
+    let avg = (a + b + c) / 3;
+    console.log(avg);
+}
+average(5, 6, 7);
+average(5, 6); // error because of missing argument
+average(5); // error because of missing argument
+
+// Question 2
+// Create a function that prints the multiplication table of a number.
+function printTable(num) {
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${num} * ${i} = ${num * i}`);
+    }
+}
+printTable(5);
+printTable(10);
+
+// recursion
+function sum2(a, b) {
+    return a + b;  // nothing will execute after return 
+}
+console.log(sum2(sum2(1, 2), 3));
