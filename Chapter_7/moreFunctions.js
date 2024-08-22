@@ -17,3 +17,12 @@ function getAvg() {
     console.log(this);
 };
 getAvg();
+
+
+// try & cath
+try {
+    let num = 10 / 0;
+    console.log(num);
+} catch (error) {
+    console.log(error.message);
+}
