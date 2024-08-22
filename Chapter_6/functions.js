@@ -85,3 +85,26 @@ function sum2(a, b) {
     return a + b;  // nothing will execute after return 
 }
 console.log(sum2(sum2(1, 2), 3));
+
+// Question 3
+// get sum from 1 to 10
+function getSum(n) {
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        sum += i;
+    }
+    return sum;
+}
+console.log(getSum(10));
+
+// Question 4
+// function that returns the concatenation of all strings in an array
+let str = ["hi", "hello", "bye", "!"];
+function concatStrings(arr) {
+    let result = "";
+    for (let i = 0; i < arr.length; i++) {
+        result += arr[i];
+    }
+    return result;
+}
+console.log(concatStrings(str));
