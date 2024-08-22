@@ -58,3 +58,16 @@ let id = setInterval(() => {
     console.log('Hello World');
 }, 2000);
 clearInterval(id);
+
+// this key words with arrow function
+// this keyword in arrow function
+const person1 = {
+    name: 'John Doe',
+    age: 20,
+    prop : this,
+    getName: function () {
+        console.log(this);
+        return this.name;
+    }
+};
+console.log(person1.getName());
