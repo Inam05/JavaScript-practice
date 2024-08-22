@@ -45,3 +45,10 @@ console.log(name, age); // Output: John Doe 20
 // Implicint return in arrow function
 const mul = (a, b) => (a * b);
 console.log(mul(10, 20)); // Output: 200
+
+// Set timeout function
+console.log ("hi there!");
+setTimeout(() => {
+    console.log('Hello World');
+}, 2000);
+console.log("My name is Inam Ul Hassan");
