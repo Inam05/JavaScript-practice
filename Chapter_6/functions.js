@@ -108,3 +108,31 @@ function concatStrings(arr) {
     return result;
 }
 console.log(concatStrings(str));
+
+
+// scope
+// function scope 
+function calSum(a, b) {
+    // function scope
+    let sum = a + b;
+    console.log(sum);
+}
+calSum(5, 6);  // sum will not access by outside the function
+
+// block scope
+{
+    let a = 25;
+    // it will not accessable out of the block 
+}
+
+// lexical scope
+function outer() {
+    let x = 10;
+    function inner() {
+        let a = 10;
+        console.log(x);
+    }
+    inner();
+    // 'a' variable is not access able here
+}
+outer(); // it will print 10
