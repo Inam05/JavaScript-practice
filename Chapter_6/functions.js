@@ -136,3 +136,19 @@ function outer() {
     // 'a' variable is not access able here
 }
 outer(); // it will print 10
+
+// Practice Questions
+// Question 1
+
+let greet = "Hello";
+function changedGreet(){
+    // global greet variable is not available in the function
+    let greet = "Salam";
+    console.log(greet);
+    function innerGreet(){
+        // greet is not accessable here because its a block scope variable
+        console.log(greet);
+    }
+}
+console.log(greet);
+changedGreet();
