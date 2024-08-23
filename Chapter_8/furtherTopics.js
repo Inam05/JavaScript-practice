@@ -39,6 +39,23 @@ let arr1 = [{
     name: "Me",
     marks: 85,
 }];
-arr1.forEach((student)=>{
+arr1.forEach((student) => {
     console.log(student.marks);
 });
+
+
+// map
+// The map() method creates a new array with the results of applying a provided function on every element
+// in this array.
+// Syntax: arr.map(callback(currentValue, index, array) { });
+// Example:
+let num = [1, 2, 3, 4, 5];
+let square = num.map(function (x) {
+    return x * x;
+});
+console.log(square);
+
+let gpa = arr1.map((el) => {
+    return el.marks/10;
+});
+console.log(gpa);
