@@ -84,3 +84,19 @@ const person1 = {
         }, 2000);
     },
 };
+
+
+// Practice Questions
+// Question 1
+// Write an arrow function that returns the square of a number 'n'
+const square = (n) => n * n;
+console.log(square(5)); // Output: 25
+
+// Question 2
+// Function that prints "Hello world" 5 times at intervals of 2s each.
+let id3 = setInterval(() => {
+    console.log("Hello World");
+}, 2000);
+setTimeout(() => {
+    clearInterval(id3);
+}, 10000);
