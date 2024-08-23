@@ -56,6 +56,18 @@ let square = num.map(function (x) {
 console.log(square);
 
 let gpa = arr1.map((el) => {
-    return el.marks/10;
+    return el.marks / 10;
 });
 console.log(gpa);
+
+// filter
+let num1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+let even = num1.filter(function (x) {
+    return x % 2 == 0;  // true for even , false for odd
+});
+console.log(even);
+let odd = num1.filter(function (x) {
+    return x % 2 != 0;  // true for odd , false for even
+});
+console.log(odd);
+
