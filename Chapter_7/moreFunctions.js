@@ -63,11 +63,24 @@ clearInterval(id);
 // this keyword in arrow function
 const person1 = {
     name: 'John Doe',
-    age: 20,
-    prop : this,
+    marks: 84,
+    prop: this,  // global scope 
     getName: function () {
         console.log(this);
         return this.name;
-    }
+    },
+    getMarks: () => {
+        console.log(this);  // parent scope -> window obj
+        return this.marks;
+    },
+    getInfo1: function () {
+        setTimeout(() => {
+            console.log(this);  // person  ->  parent scope
+        }, 2000);
+    },
+    getInfo2: function () {
+        setTimeout(function () {
+            console.log(this);   // window obj  -> global scope
+        }, 2000);
+    },
 };
-console.log(person1.getName());
