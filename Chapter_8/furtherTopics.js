@@ -71,3 +71,12 @@ let odd = num1.filter(function (x) {
 });
 console.log(odd);
 
+// every
+// The every() method tests whether all elements in the array pass the test implemented by the provided function
+// Syntax: arr.every(callback(element, index, array) { });
+// Example:
+let num2 = [1, 2, 3, 4, 5];
+let isEven = num2.every(function (x) {  // AND gate 
+    return x % 2 == 0;
+});
+console.log(isEven); // false  
