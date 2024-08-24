@@ -80,3 +80,16 @@ let isEven = num2.every(function (x) {  // AND gate
     return x % 2 == 0;
 });
 console.log(isEven); // false  
+
+
+// reduce
+// The reduce() method applies a function against an accumulator and each element in the array (from left
+// to right) to reduce it to a single value.
+// Syntax: arr.reduce(callback(accumulator, currentValue, index, array) { }, initialValue);
+// Example:
+let num3 = [1, 2, 3, 4, 5];
+let sum = num3.reduce(function (a, b) {
+    return a + b;
+}, 0);
+console.log(sum); // 15
+
