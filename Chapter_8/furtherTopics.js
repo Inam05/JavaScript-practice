@@ -113,3 +113,32 @@ console.log(sum1(7)); // 12
 let num4 = [1, 2, 3, 4, 5];
 let num5 = [...num4]; // spread operator
 console.log(num5); // [1, 2, 3, 4, 5]
+
+// rest 
+// The rest parameter syntax, ...args, allows a function to accept a variable number of arguments as
+// an array.
+// Example:
+function sum2(...args) {
+    return args.reduce((a, b) => a + b, 0);
+};
+console.log(sum2(1, 2, 3, 4, 5));
+
+function min() {
+    console.log(arguments);
+};
+min(1, 2, 3, 4, 5);
+// arguments is an array like object of the arguments passed to a function. It contains the values of
+// all the arguments passed to the function in the order they were passed in. It is not an
+// array, but it can be treated like one.
+// Example:
+// function min() {
+//     console.log(arguments);
+// };
+// min(1, 2, 3, 4, 5);
+// Output: [1, 2, 3, 4, 5]
+// The arguments object is not available in arrow functions. Instead, you can use the rest
+// parameter syntax to achieve the same result.
+function sum4() {
+    return arguments.reduce((sum4, el) => sum4 + el);
+};
+// console.log(sum4(1, 2, 3, 4, 5));   not used by argruments.reduce
