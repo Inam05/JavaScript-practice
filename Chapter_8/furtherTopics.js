@@ -142,3 +142,18 @@ function sum4() {
     return arguments.reduce((sum4, el) => sum4 + el);
 };
 // console.log(sum4(1, 2, 3, 4, 5));   not used by argruments.reduce
+
+// destructuring
+// Destructuring is a feature in JavaScript that allows you to unpack values from arrays, objects,
+// maps, sets, and other data structures into distinct variables.
+// Example:
+let person = {
+    name: 'John',
+    age: 30,
+    occupation: 'Developer',
+};
+let { name, age, occupation } = person;
+console.log(name); // John
+console.log(age); // 30
+console.log(occupation); // Developer
+// Destructuring can also be used with arrays.
