@@ -93,3 +93,14 @@ let sum = num3.reduce(function (a, b) {
 }, 0);
 console.log(sum); // 15
 
+
+
+// default parameters 
+// In JavaScript, you can define a function with default parameters. If a value isn't provided for
+// a parameter when the function is called, JavaScript uses the default value.
+// Example:
+function sum1(a, b = 5) {
+    return a + b;
+}
+console.log(sum1(7,5));
+console.log(sum1(7)); // 12
