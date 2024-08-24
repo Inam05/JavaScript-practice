@@ -102,5 +102,14 @@ console.log(sum); // 15
 function sum1(a, b = 5) {
     return a + b;
 }
-console.log(sum1(7,5));
+console.log(sum1(7, 5));
 console.log(sum1(7)); // 12
+
+
+// spread
+// The spread operator is a feature in JavaScript that allows an iterable such as an array or string to
+// be expanded in places where zero or more arguments are expected.
+// Example:
+let num4 = [1, 2, 3, 4, 5];
+let num5 = [...num4]; // spread operator
+console.log(num5); // [1, 2, 3, 4, 5]
