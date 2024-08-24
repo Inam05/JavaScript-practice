@@ -156,4 +156,3 @@ let { name, age, occupation } = person;
 console.log(name); // John
 console.log(age); // 30
 console.log(occupation); // Developer
-// Destructuring can also be used with arrays.
