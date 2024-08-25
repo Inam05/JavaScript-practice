@@ -117,3 +117,23 @@ function process(value1, value2) {
 
 console.log(process(2, 3)); // 5
 console.log(process('Hello', 'World')); // HelloWorld
+
+// Question 2
+/* Write a higher-order function that takes an asynchronous function and a delay time in milliseconds. It should return a new 
+function that delays the execution of the provided asynchronous function. */
+function delayExecution(asyncFn, delay) {
+    return function (...args) {
+        return new Promise(resolve => {
+            setTimeout(() => {
+                resolve(asyncFn(...args));
+            }, delay);
+        });
+    };
+}
+
+async function fetchData(id) {
+    return `Data for ${id}`;
+}
+
+const delayedFetchData = delayExecution(fetchData, 2000);
+delayedFetchData(1).then(console.log); // Logs data after 2 seconds
