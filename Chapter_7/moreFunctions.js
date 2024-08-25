@@ -168,3 +168,24 @@ function fibonacci(n) {
 
 console.log(fibonacci(5)); // 5
 console.log(fibonacci(-1)); // Invalid input
+
+
+// Question 5
+/* Implement a function that maintains a private state using closure. The function should allow incrementing and getting 
+the current state value. */
+function createCounter() {
+    let count = 0;
+    return {
+        increment: function () {
+            count++;
+        },
+        getValue: function () {
+            return count;
+        }
+    };
+}
+
+const counter = createCounter();
+counter.increment();
+counter.increment();
+console.log(counter.getValue()); // 2
