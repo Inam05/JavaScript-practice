@@ -137,3 +137,20 @@ async function fetchData(id) {
 
 const delayedFetchData = delayExecution(fetchData, 2000);
 delayedFetchData(1).then(console.log); // Logs data after 2 seconds
+
+
+// Question 3
+/* Create a function that composes multiple functions together dynamically based on the provided array of functions. The 
+composed function should apply each function in sequence to a given value. */
+function composeFunctions(...fns) {
+    return function (value) {
+        return fns.reduce((acc, fn) => fn(acc), value);
+    };
+}
+
+const add2 = x => x + 2;
+const multiplyBy3 = x => x * 3;
+const subtract5 = x => x - 5;
+
+const composedFunction = composeFunctions(add2, multiplyBy3, subtract5);
+console.log(composedFunction(5)); // ((5 + 2) * 3) - 5 = 16
