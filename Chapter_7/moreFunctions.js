@@ -100,3 +100,20 @@ let id3 = setInterval(() => {
 setTimeout(() => {
     clearInterval(id3);
 }, 10000);
+
+
+// Question 1
+/* JavaScript doesn’t support function overloading directly. Write a function that simulates overloading by checking the 
+type and number of arguments and performs different operations based on that. */
+function process(value1, value2) {
+    if (typeof value1 === 'number' && typeof value2 === 'number') {
+        return value1 + value2; // Sum if both are numbers
+    } else if (typeof value1 === 'string' && typeof value2 === 'string') {
+        return value1.concat(value2); // Concatenate if both are strings
+    } else {
+        return 'Invalid input';
+    }
+}
+
+console.log(process(2, 3)); // 5
+console.log(process('Hello', 'World')); // HelloWorld
