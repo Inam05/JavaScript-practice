@@ -154,3 +154,17 @@ const subtract5 = x => x - 5;
 
 const composedFunction = composeFunctions(add2, multiplyBy3, subtract5);
 console.log(composedFunction(5)); // ((5 + 2) * 3) - 5 = 16
+
+
+// Question 4
+/* Write a recursive function that computes the nth Fibonacci number. The function should handle cases where n is zero or a 
+negative integer by returning appropriate messages. */
+function fibonacci(n) {
+    if (n < 0) return 'Invalid input'; // Handle negative numbers
+    if (n === 0) return 0;
+    if (n === 1) return 1;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+console.log(fibonacci(5)); // 5
+console.log(fibonacci(-1)); // Invalid input
