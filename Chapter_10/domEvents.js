@@ -4,7 +4,8 @@ let btn = document.querySelector("button");
 //     alert("Button clicked");
 // }
 
-function sayHello () {
-    alert("Hello");
-}
-btn.onclick = sayHello;
+// function sayHello () {
+//     alert("Hello");
+// }
+// btn.onclick = sayHello;
+
