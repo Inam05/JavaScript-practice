@@ -9,3 +9,6 @@ let btn = document.querySelector("button");
 // }
 // btn.onclick = sayHello;
 
+btn.addEventListener("click", function () {
+    console.log("button clicked");
+});
