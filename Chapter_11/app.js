@@ -74,3 +74,28 @@ savetoDb2("inam")
     .catch(() => {
         console.log("promise false: weak connection");
     });
+
+// through promise chain 
+
+function savetoDb3(data) {
+    return new Promise(((resolve, reject) => {
+        let internetSpeed = Math.floor(Math.random() * 10) + 1;
+        if (internetSpeed > 4) {
+            resolve("success data was saved");
+        } else {
+            reject("failure weak connection");
+        }
+    }));
+};
+
+savetoDb3("ianm")
+    .then(() => {
+        console.log("promise chain true: data was saved");
+        return savetoDb3("me");
+    })
+    .then(() => {
+        console.log("promise chain true: data was saved");
+    })
+    .catch(() => {
+        console.log("promise chain false: weak connection");
+    });
