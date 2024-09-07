@@ -130,3 +130,33 @@ savetoDb4("inam")
         console.log("promise chain false: weak connection");
         console.log(eror);
     });
+
+
+// Question1 resolved through promises 
+h2 = document.querySelector("h2");
+
+function changeColor2(color, delay) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            h2.style.color = color;
+            resolve("color changed!");
+        }, delay);
+    });
+}
+
+changeColor2("red", 1000)
+    .then(() => {
+        console.log("red color was completed");
+        return changeColor2("orange", 1000);
+    })
+    .then(() => {
+        console.log("orange color was completed");
+        return changeColor2("green", 1000);
+    })
+    .then(() => {
+        console.log("green color was completed");
+        return changeColor2("blue", 1000);
+    })
+    .then(() => {
+        console.log("blue color was completed");
+    });
