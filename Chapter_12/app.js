@@ -33,3 +33,26 @@ async function demo2() {
     getNum();
 };
 demo2();
+
+
+// await keyword with changing color of H1
+
+h1 = document.querySelector("h1");
+
+function changeColor2(color, delay) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            h1.style.color = color;
+            resolve("color changed!");
+        }, delay);
+    });
+};
+
+async function demo3() {
+    await changeColor2("red", 1000);
+    await changeColor2("blue", 1000);
+    await changeColor2("green", 1000);
+    await changeColor2("purple", 1000)
+};
+
+demo3();
