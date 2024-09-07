@@ -22,15 +22,37 @@ fetch(url)
         return response.json();
     })
     .then((data) => {
-        console.log("data1 = ",data.fact);
+        console.log("data1 = ", data.fact);
         return fetch(url);
     })
     .then((response) => {
         return response.json();
     })
     .then((data2) => {
-        console.log("data2 = ",data2.fact);
+        console.log("data2 = ", data2.fact);
     })
     .catch((error) => {
         console.error(error);
     })
+
+
+// API fetch through async and await keywords
+async function getCatFact() {
+    try {
+        let res = await fetch(url);
+        let data = await res.json();
+        console.log(data.fact);
+
+        let res2 = await fetch(url);
+        let data2 = await res2.json();
+        console.log(data2.fact);
+
+        let res3 = await fetch(url);
+        let data3 = await res3.json();
+        console.log(data3.fact);
+    } catch (e) {
+        console.log(e);
+    }
+
+};
+getCatFact();
