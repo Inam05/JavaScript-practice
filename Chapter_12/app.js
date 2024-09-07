@@ -23,7 +23,7 @@ function getNum() {
             let num = Math.floor(Math.random() * 10) + 1;
             console.log(num);
             resolve();
-        },1000);
+        }, 1000);
     })
 };
 
@@ -42,6 +42,13 @@ h1 = document.querySelector("h1");
 function changeColor2(color, delay) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
+            // Handling Reject
+            let num = Math.floor(Math.random() * 10) + 1;
+            if (num > 3) {
+                reject();
+            };
+
+
             h1.style.color = color;
             resolve("color changed!");
         }, delay);
@@ -49,10 +56,22 @@ function changeColor2(color, delay) {
 };
 
 async function demo3() {
-    await changeColor2("red", 1000);
-    await changeColor2("blue", 1000);
-    await changeColor2("green", 1000);
-    await changeColor2("purple", 1000)
+    try {
+        await changeColor2("red", 1000);
+        await changeColor2("blue", 1000);
+        await changeColor2("green", 1000);
+        await changeColor2("purple", 1000);
+    } catch(err){
+        console.log("Error caught");
+        console.log(err);
+    }
+
+
+
+    // Handling rejections
+    let a = 5;
+    console.log(a);
+    console.log("new number = ", a + 3);
 };
 
 demo3();
